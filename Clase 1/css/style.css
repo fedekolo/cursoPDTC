@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+
+body {
+    background-color: #e0ece4;
+    font-family: 'Mali', cursive;
+}
+
+header {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Leckerli One', cursive;
+}
+
+.full-container {
+    background-color: #f7f2e7;
+    margin: 100px;
+    margin-bottom: 0;
+    padding: 30px 20%;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+}
+
+article {
+    background-color: #d8d3cd;
+    margin-bottom: 80px;
+    padding: 0 20px 20px 20px;
+}
+
+.article-image {
+    width: auto;
+    height: 300px;
+}
+
+.article-ingredientes {
+    list-style: none;
+}
+
+.info-contacto {
+    list-style: none;
+}
+
+footer {
+    background-color: #797a7e;
+    width: 100%;
+    height: 100px;
+    margin-top: -15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-weight: bold;
+}
