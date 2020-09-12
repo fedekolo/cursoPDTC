@@ -1,0 +1,64 @@
+/* COLORES BASE */
+:root {
+    --color-primary: rgb(11, 19, 61);
+    --color-secondary: rgb(29, 36, 70);
+    --color-terciary: rgb(202, 178, 40);
+}
+
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+/* NORMALIZADORES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ramabhadra', sans-serif;
+}
+
+a:link, a:visited, a:active { 
+    text-decoration: none; 
+}
+
+/* NAVBAR DESKTOP */
+.menu-desktop {
+    width: 100vw;
+    height: 5rem;
+    background-color: var(--color-primary);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-desktop ul {
+    width: 90%;
+    max-width: 50rem;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-desktop ul li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-desktop ul li a {
+    color: white;
+    letter-spacing: 0.1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.3rem solid var(--color-primary);
+    padding: 0 1rem;
+}
+
+.menu-desktop ul li:hover a {
+    border-bottom: 0.3rem solid var(--color-terciary);
+    background-color: rgba(0, 0, 0, 0.253);
+}

@@ -8,8 +8,9 @@
 </head>
 <body>
     <div class="full-container">
-        <!-- menu de navegacion fijo -->
-        <nav>
+        
+        <!-- NAVBAR DESKTOP -->
+        <nav class="menu-desktop">
             <ul>
                 <li><a href="#inicio">INICIO</a></li>
                 <li><a href="#sobre-mi">SOBRE MI</a></li>
@@ -20,11 +21,11 @@
         </nav>
 
         <!-- informacion inicial -->
-        <header>
+        <header id="inicio">
             <article class="card-inicial">
                 <span>Yo soy</span><br>
                 <h1>Federico Kolonski</h1>
-                <div class="card-inicial-boton">Soy Desarrollador Web Full Stack</div>
+                <div class="card-inicial-boton">Soy Casi Desarrollador Web Full Stack</div>
                 <div class="card-inicial-redes">
                     <a href="https://www.instagram.com/fedekolonski/"><img src="images/instagram.svg" alt="Instagram"></a>
                     <a href="https://www.linkedin.com/in/federico-kolonski-2a32b9a8/"><img src="images/linkedin.svg" alt="Linkedin"></a>
@@ -35,11 +36,11 @@
         </header>
 
         <!-- seccion sobre mi -->
-        <section>
+        <section id="sobre-mi">
             <article class="card-info">
                 <img src="" alt="Foto perfil">
                 <div class="card-info-texto">
-                    <h3>Sobre mi</h3><br>
+                    <h2>Sobre mi</h3><br>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum magni ratione libero voluptatibus quasi sint. Expedita provident perferendis voluptatem quibusdam voluptatum deleniti, aperiam neque, eveniet facilis nobis ipsam adipisci iure?</p>
                     <img src="" alt="Firma">
                 </div>
@@ -47,8 +48,76 @@
         </section>
 
         <!-- seccion skills -->
-        
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-logos">
+                <div class="skills-html">
+                    <img src="" alt="HTML">
+                    <meter value="8" min="0" max="10"></meter>
+                </div>
+                <div class="skills-css">
+                    <img src="" alt="CSS">
+                    <meter value="7" min="0" max="10"></meter>
+                </div>
+                <div class="skills-bootstrap">
+                    <img src="" alt="Bootstrap">
+                    <meter value="3" min="0" max="10"></meter>
+                </div>
+                <div class="skills-javascript">
+                    <img src="" alt="Javascript">
+                    <meter value="0" min="0" max="10"></meter>
+                </div>
+                <div class="skills-node-js">
+                    <img src="" alt="Node.js">
+                    <meter value="0" min="0" max="10"></meter>
+                </div>
+                <div class="skills-mysql">
+                    <img src="" alt="MySql">
+                    <meter value="0" min="0" max="10"></meter>
+                </div>
+            </div>
+        </section>
 
+        <!-- seccion trabajos -->
+        <section id="trabajos">
+            <h2>Trabajos</h2>
+            <div class="container-trabajos">
+                <div class="trabajo-moscovicz">
+                    <h3>Moscovicz.tk</h3><br>
+                    <span>Página web creada para artista Argentino donde expone sus obras</span>
+                    <a href="www.moscovicz.tk"><img src="" alt="moscovicz.tk"></a>
+                </div>
+                <div class="trabajo-rocketcode">
+                    <h3>Proyecto para curso de HTML/CSS</h3><br>
+                    <span>Proyecto web para curso de HTML y CSS</span>
+                    <a href=""><img src="" alt="Proyecto RocketCode"></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- contacto -->
+        <footer id="contacto">
+            <h2>Contacto</h2>
+            <form action="" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="mail" placeholder="Mail" required>
+                <input type="number" name="número" placeholder="Número de teléfono" required>
+                <textarea name="mensaje"></textarea>
+                <button>Enviar</button>
+            </form>
+            <div class="contacto-info">
+                <ul>
+                    <li>Federico Kolonski</li>
+                    <li>fedekolonski@gmail.com</li>
+                    <li>+54 9 11 5025 8243</li>
+                </ul>
+                <div class="contacto-info-redes">
+                    <a href="https://www.instagram.com/fedekolonski/"><img src="images/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.linkedin.com/in/federico-kolonski-2a32b9a8/"><img src="images/linkedin.svg" alt="Linkedin"></a>
+                    <a href="https://api.whatsapp.com/send?phone=5491150258243"><img src="images/whatsapp.svg" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
