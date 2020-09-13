@@ -1,21 +1,36 @@
+/* TIPOS DE FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
+
 /* COLORES BASE */
 :root {
-    --color-primary: rgb(11, 19, 61);
-    --color-secondary: rgb(29, 36, 70);
-    --color-terciary: rgb(202, 178, 40);
+    --color-primary: #161922;
+    --color-secondary: #191d27;
+    --color-terciary: #ffb950d0;
 }
 
-/* TIPOS DE FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
-
-
 /* CARACTERISTICAS DE FUENTES DESKTOP */
+.full-container {
+    font-family: 'Nunito', sans-serif;
+}
+
 h1 {
+    font-size: 3.5rem;
+    color: white;
+}
+
+h2 {
     font-size: 3rem;
+    color: var(--color-terciary);
+}
+
+p {
+    font-size: 1.5rem;
+    color: white;
 }
 
 span {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    color: white;
 }
 
 /* NORMALIZADORES */
@@ -23,8 +38,8 @@ span {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Ramabhadra', sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 a:link, a:visited, a:active { 
@@ -92,7 +107,7 @@ a:hover {
 
 .container-inicio {
     width: 90%;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -104,27 +119,26 @@ a:hover {
     height: auto;
     display: flex;
     flex-direction: column;
-    color: white;
-    margin: auto 20%;
+    margin: auto 10%;
 }
 
     .card-inicio > span, h1 {
-        margin: .1.5rem 0;
+        margin: .1.3rem 0;
     }
 
 .card-inicio-boton {
     width: 20rem;
     height: auto;
     padding: .5rem;
-    margin-top: .4rem;
+    margin-top: .7rem;
     background-color: var(--color-terciary);
     text-align: center;
     font-weight: bold;
-    box-shadow: 5rem rgba(0, 0, 0, 0.712);
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, 0.185);
 }
 
 .card-inicio-redes {
-    width: 8rem;
+    width: 12rem;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -152,4 +166,55 @@ a:hover {
 .foto-inicio {
     width: 50%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
+
+/* SOBRE MI */
+
+#sobre-mi {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-sobremi {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-perfil-sobremi {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.card-sobremi {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto 10%;
+}
+
+    .card-sobremi p {
+        text-align: justify;
+        line-height: 1.5;
+        margin: .5rem auto;
+        overflow-y: hidden;
+    }
+
+    .card-sobremi img {
+        margin-top: .5rem;
+    }
+
