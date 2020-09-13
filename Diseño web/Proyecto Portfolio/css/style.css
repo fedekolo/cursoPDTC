@@ -5,8 +5,18 @@
     --color-terciary: rgb(202, 178, 40);
 }
 
-/* FUENTES */
+/* TIPOS DE FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap');
+
+
+/* CARACTERISTICAS DE FUENTES DESKTOP */
+h1 {
+    font-size: 3rem;
+}
+
+span {
+    font-size: 1.5rem;
+}
 
 /* NORMALIZADORES */
 * {
@@ -14,10 +24,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Ramabhadra', sans-serif;
+    scroll-behavior: smooth;
 }
 
 a:link, a:visited, a:active { 
     text-decoration: none; 
+}
+
+a:hover {
+    cursor: pointer;
 }
 
 /* NAVBAR DESKTOP */
@@ -30,35 +45,111 @@ a:link, a:visited, a:active {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.582);
 }
 
-.menu-desktop ul {
+    .menu-desktop ul {
+        width: 90%;
+        max-width: 50rem;
+        height: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-desktop ul li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-desktop ul li a {
+        color: white;
+        letter-spacing: 0.1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: 0.3rem solid var(--color-primary);
+        border-top: 0.3rem solid var(--color-primary);
+        padding: 0 1rem;
+    }
+
+    .menu-desktop ul li:hover a {
+        border-bottom: 0.3rem solid var(--color-terciary);
+        background-color: rgba(0, 0, 0, 0.253);
+    }
+
+/* INICIO */
+#inicio {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-inicio {
     width: 90%;
-    max-width: 50rem;
     height: 100%;
-    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-inicio {
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: auto 20%;
+}
+
+    .card-inicio > span, h1 {
+        margin: .1.5rem 0;
+    }
+
+.card-inicio-boton {
+    width: 20rem;
+    height: auto;
+    padding: .5rem;
+    margin-top: .4rem;
+    background-color: var(--color-terciary);
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 5rem rgba(0, 0, 0, 0.712);
+}
+
+.card-inicio-redes {
+    width: 8rem;
+    height: auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin-top: 1rem;
 }
 
-.menu-desktop ul li {
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
+    .card-inicio-redes a {
+        width: 2.7rem;
+        height: 2.7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2.7rem;
+    }
 
-.menu-desktop ul li a {
-    color: white;
-    letter-spacing: 0.1rem;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    border-bottom: 0.3rem solid var(--color-primary);
-    padding: 0 1rem;
-}
+    .card-inicio-redes a:hover {
+        background-color: var(--color-secondary);
+    }
 
-.menu-desktop ul li:hover a {
-    border-bottom: 0.3rem solid var(--color-terciary);
-    background-color: rgba(0, 0, 0, 0.253);
+    .card-inicio-redes a img {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+.foto-inicio {
+    width: 50%;
+    height: auto;
 }
