@@ -61,6 +61,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.582);
+    z-index: 1;
 }
 
     .menu-desktop ul {
@@ -172,7 +173,6 @@ a:hover {
 }
 
 /* SOBRE MI */
-
 #sobre-mi {
     width: 100vw;
     height: 100vh;
@@ -218,3 +218,55 @@ a:hover {
         margin-top: .5rem;
     }
 
+/* SKILLS */
+#skills {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-skills {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+    .container-skills h2 {
+        -webkit-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+
+.skills-logos {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 10%;
+    margin-top: 5rem;
+}
+
+.skill-logo {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+    .skill-logo img {
+        filter: grayscale(100%);
+        width: 100%; 
+        height: auto;  
+    }
+
+    .skill-logo img:hover {
+        filter: none;
+    }
