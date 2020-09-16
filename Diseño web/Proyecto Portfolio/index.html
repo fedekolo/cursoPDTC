@@ -54,76 +54,89 @@
             </div>
         </section>
 
-        <!-- seccion skills -->
+        <!-- SKILLS -->
         <section id="skills">
             <div class="container-skills">
                 <h2>- Skills -</h2>
-                <div class="skills-logos">
+                <article class="skills-logos">
                     <div class="skill-logo html">
+                        <h4>HTML5</h4>
                         <img src="images/html.png" alt="HTML">
-                        <meter value="8" min="0" max="10"></meter>
+                        <progress value="8" max="10"></progress>
                     </div>
                     <div class="skill-logo css">
+                        <h4>CSS3</h4>
                         <img src="images/css.png" alt="CSS">
-                        <meter value="7" min="0" max="10"></meter>
+                        <progress value="7" min="0" max="10"></progress>
                     </div>
                     <div class="skill-logo bootstrap">
+                        <h4>Bootstrap</h4>
                         <img src="images/bootstrap.png" alt="Bootstrap">
-                        <meter value="3" min="0" max="10"></meter>
+                        <progress value="3" min="0" max="10"></progress>
                     </div>
                     <div class="skill-logo javascript">
+                        <h4>JavaScript</h4>
                         <img src="images/javascript.png" alt="Javascript">
-                        <meter value="0" min="0" max="10"></meter>
+                        <progress value="0" min="0" max="10"></progress>
                     </div>
                     <div class="skill-logo node-js">
+                        <h4>Node.js</h4>
                         <img src="images/nodejs.png" alt="Node.js">
-                        <meter value="0" min="0" max="10"></meter>
+                        <progress value="0" min="0" max="10"></progress>
                     </div>
                     <div class="skill-logo mysql">
+                        <h4>MySQL</h4>
                         <img src="images/mysql.png" alt="MySql">
-                        <meter value="0" min="0" max="10"></meter>
+                        <progress value="0" min="0" max="10"></progress>
                     </div>
-                </div>
+                </article>
             </div>
         </section>
 
-        <!-- seccion trabajos -->
+        <!-- TRABAJOS -->
         <section id="trabajos">
-            <h2>Trabajos</h2>
             <div class="container-trabajos">
-                <div class="trabajo-moscovicz">
-                    <h3>Moscovicz.tk</h3><br>
-                    <span>Página web creada para artista Argentino donde expone sus obras</span>
-                    <a href="www.moscovicz.tk"><img src="" alt="moscovicz.tk"></a>
-                </div>
-                <div class="trabajo-rocketcode">
-                    <h3>Proyecto para curso de HTML/CSS</h3><br>
-                    <span>Proyecto web para curso de HTML y CSS</span>
-                    <a href=""><img src="" alt="Proyecto RocketCode"></a>
-                </div>
+                <h2>- Trabajos -</h2>
+                <article class="items-trabajos">
+                    <div class="item-trabajo moscovicz">
+                        <h4>Moscovicz.tk</h4>
+                        <a href="http://www.moscovicz.tk/" target="_blank"><img src="images/moscovicz.JPG" alt="moscovicz.tk"></a>
+                        <p>Página web creada para artista Argentino donde expone sus obras</p>
+                    </div>
+                    <div class="item-trabajo rocketcode">
+                        <h4>Proyecto para curso de HTML/CSS</h4>
+                        <a href=""><img src="images/curso-html-css.jpg" alt="Proyecto RocketCode"></a>
+                        <p>Proyecto web para curso de HTML y CSS</p>
+                    </div>
+                </article>
             </div>
         </section>
 
-        <!-- contacto -->
+        <!-- CONTACTO -->
         <footer id="contacto">
-            <h2>Contacto</h2>
-            <form action="" method="POST">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="email" name="mail" placeholder="Mail" required>
-                <input type="number" name="número" placeholder="Número de teléfono" required>
-                <textarea name="mensaje"></textarea>
-                <button>Enviar</button>
-            </form>
-            <div class="contacto-info">
-                <ul>
-                    <li>Federico Kolonski</li>
-                    <li>fedekolonski@gmail.com</li>
-                    <li>+54 9 11 5025 8243</li>
-                </ul>
-                <div class="contacto-info-redes">
-                    <a href="https://www.instagram.com/fedekolonski/"><img src="images/instagram.svg" alt="Instagram"></a>
-                    <a href="https://www.linkedin.com/in/federico-kolonski-2a32b9a8/"><img src="images/linkedin.svg" alt="Linkedin"></a>
-                    <a href="https://api.whatsapp.com/send?phone=5491150258243"><img src="images/whatsapp.svg" alt="Whatsapp"></a>
+            <div class="container-contacto">
+                <h2>- Contacto -</h2>
+                <div class="container-form-info">
+                    <form action="" method="POST">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="mail" placeholder="Mail" required>
+                        <input type="number" name="número" placeholder="Número de teléfono" required>
+                        <textarea name="mensaje"></textarea>
+                        <button>Enviar</button>
+                    </form>
+                    <article class="contacto-info">
+                        <ul>
+                            <li>- Federico Kolonski -</li>
+                            <li>- fedekolonski@gmail.com -</li>
+                            <li>- +54 9 11 5025 8243 -</li>
+                        </ul>
+                        <div class="contacto-info-redes">
+                            <a href="https://www.instagram.com/fedekolonski/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+                            <a href="https://www.linkedin.com/in/federico-kolonski-2a32b9a8/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin" ></a>
+                            <a href="https://github.com/fedekolo" target="_blank"><img src="images/github.svg" alt="GitHub" ></a>
+                            <a href="https://api.whatsapp.com/send?phone=5491150258243" target="_blank"><img src="images/whatsapp.svg" alt="Whatsapp" ></a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </footer>
