@@ -243,24 +243,24 @@ a:hover {
 .container-skills {
     width: 80%;
     max-width: 70rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 5%;
 }
 
 .skills-logos {
-    width: 100%;
-    height: auto;
+    width: 80%;
+    height: 30%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
 
 .skill-logo {
-    width: 11rem;
+    width: 20%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -272,9 +272,9 @@ a:hover {
 
     .skill-logo img {
         filter: grayscale(100%);
-        width: 100%; 
+        width: 80%; 
         height: auto;
-        margin: 1rem 0 2rem 0;
+        margin: 1rem auto;
         transition: filter .5s ease;
     }
 
@@ -318,11 +318,12 @@ a:hover {
 .container-trabajos {
     width: 80%;
     max-width: 70rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 5%;
 }
 
 .items-trabajos {
@@ -364,16 +365,69 @@ a:hover {
 }
 
 .container-contacto {
-    width: 80%;
+    width: 60%;
     max-width: 70rem;
-    height: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 5%;
 }
 
+.container-form-info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.contacto-form {
+    width: 40%;
+    height: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--color-secondary);
+    padding: 3rem;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, 0.158);
+}
+
+    .contacto-form input {
+        height: 2rem;
+        margin: 1rem 0;
+        background-color: var(--color-secondary);
+        border: 0;
+        border-bottom: .1rem solid #ffb950d0;
+    }
+
+    /* eliminar flechas input number */
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    appearance: none; 
+    margin: 0; 
+    } 
+
+    .contacto-form textarea {
+        height: 4rem;
+        margin: 1rem 0; 
+        background-color: var(--color-secondary);
+        border: 0;
+        border-bottom: .1rem solid #ffb950d0;
+        resize: none;
+    }
+
+    .contacto-form button {
+        height: 2rem;
+        width: 50%;
+        margin: 1rem auto;
+        background-color: var(--color-terciary);
+        border-radius: .5rem;
+    }
 
 /* redes contacto */
 .contacto-info-redes {
