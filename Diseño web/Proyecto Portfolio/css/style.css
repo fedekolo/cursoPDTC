@@ -70,7 +70,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.582);
+    box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.582);
     z-index: 1;
 }
 
@@ -201,6 +201,7 @@ a:hover {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+    padding: 2%;
 }
 
 .foto-perfil-sobremi {
@@ -248,12 +249,12 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    padding: 2%;
 }
 
 .skills-logos {
     width: 80%;
-    height: 30%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -267,19 +268,19 @@ a:hover {
     justify-content: center;
     margin: 2% 5%;
     text-align: center;
-    align-items: stretch;
 }
 
     .skill-logo img {
         filter: grayscale(100%);
         width: 80%; 
         height: auto;
-        margin: 1rem auto;
-        transition: filter .5s ease;
+        margin: 1rem auto 1.5rem auto;
+        transition: all .5s ease;
     }
 
     .skill-logo img:hover {
         filter: none;
+        transform: scale(1.1);
     }
 
     /* BARRAS DE PROGRESO */
@@ -287,20 +288,35 @@ a:hover {
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        border: .2rem solid rgba(0, 0, 0, 0.11);
+        border: .2rem solid rgba(0, 0, 0, 0.295);
         border-radius: .5rem;
         margin: auto;
     }
 
     .skill-logo progress[value]::-webkit-progress-bar {
-        background-color: var(--color-secondary);
+        background-color: #3b445c75;
     }
 
     .skill-logo progress[value]::-webkit-progress-value {
         background-color: var(--color-terciary);
     }
+
+        /* arreglos barras de progreso */
+        .skill-logo.bootstrap img {
+            margin-bottom: 2.4rem;
+        }
+    
+        .skill-logo.javascript img {
+            margin-bottom: 2.5rem;
+        }
+    
+        .skill-logo.mysql img {
+            margin-bottom: 3.5rem;
+        }
+
     /* FIN BARRAS DE PROGRESO */
 
+    /* arreglo skin mysql */
     .mysql img {
         margin-top: 4rem;
     }
@@ -365,14 +381,14 @@ a:hover {
 }
 
 .container-contacto {
-    width: 60%;
+    width: 80%;
     max-width: 70rem;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    padding: 5% auto;
 }
 
 .container-form-info {
@@ -382,6 +398,8 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: 5%;
+    padding: 0 0 2% 0;
 }
 
 .contacto-form {
@@ -392,34 +410,38 @@ a:hover {
     background-color: var(--color-secondary);
     padding: 3rem;
     border-radius: .5rem;
-    box-shadow: .2rem .2rem .2rem .2rem rgba(0, 0, 0, 0.158);
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.644);
 }
 
-    .contacto-form input {
+    .contacto-form input, textarea {
         height: 2rem;
         margin: 1rem 0;
         background-color: var(--color-secondary);
         border: 0;
         border-bottom: .1rem solid #ffb950d0;
+        color: white;
+        outline: none;
+    }
+
+    .contacto-form textarea {
+        resize: vertical;
+        height: 2rem;
+        font-family: 'Nunito', sans-serif;
+    }
+
+    .contacto-form input:focus, textarea:focus {
+        border-bottom: .1rem solid white;
+        background-color: var(--color-secondary);
     }
 
     /* eliminar flechas input number */
     input[type=number]::-webkit-inner-spin-button, 
     input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    appearance: none; 
-    margin: 0; 
+        -webkit-appearance: none; 
+        -moz-appearance: none; 
+        appearance: none; 
+        margin: 0; 
     } 
-
-    .contacto-form textarea {
-        height: 4rem;
-        margin: 1rem 0; 
-        background-color: var(--color-secondary);
-        border: 0;
-        border-bottom: .1rem solid #ffb950d0;
-        resize: none;
-    }
 
     .contacto-form button {
         height: 2rem;
@@ -429,13 +451,23 @@ a:hover {
         border-radius: .5rem;
     }
 
+.contacto-info {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    line-height: 2.5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* redes contacto */
 .contacto-info-redes {
     width: 12rem;
     height: auto;
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin: 1rem auto auto auto;
 }
 
     .contacto-info-redes a {
@@ -455,3 +487,19 @@ a:hover {
         width: 1.2rem;
         height: 1.2rem;
     }
+
+/* fin redes contacto */
+
+
+
+
+
+
+/* arreglo de contenido al achicar en el eje Y */
+@media (max-height: 620px) {
+
+    #inicio, #sobre-mi, #skills, #trabajos, #contacto  {
+        height: auto;
+    }
+
+}
