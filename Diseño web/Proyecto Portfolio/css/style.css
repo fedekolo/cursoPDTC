@@ -1,3 +1,5 @@
+/* --------------CARACTERISTICAS GENERALES---------------- */
+
 /* TIPOS DE FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800;900&display=swap');
 
@@ -8,7 +10,7 @@
     --color-terciary: #ffb950d0;
 }
 
-/* CARACTERISTICAS DE FUENTES DESKTOP */
+/* FUENTES */
 .full-container {
     font-family: 'Nunito', sans-serif;
 }
@@ -60,7 +62,9 @@ a:hover {
     cursor: pointer;
 }
 
-/* NAVBAR DESKTOP */
+/* --------------VERSION DESKTOP---------------- */
+
+/* NAVBAR */
 .menu-desktop {
     width: 100vw;
     height: 5rem;
@@ -109,7 +113,7 @@ a:hover {
 /* INICIO */
 #inicio {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -135,7 +139,7 @@ a:hover {
 }
 
     .card-inicio > span, h1 {
-        margin: .1.3rem 0;
+        margin: .3rem 0;
     }
 
 .card-inicio-boton {
@@ -186,7 +190,7 @@ a:hover {
 /* SOBRE MI */
 #sobre-mi {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
@@ -201,7 +205,7 @@ a:hover {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 3% 0;
 }
 
 .foto-perfil-sobremi {
@@ -234,7 +238,7 @@ a:hover {
 /* SKILLS */
 #skills {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -249,8 +253,9 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding: 5% 2%;
     margin: auto;
+    overflow-y: none;
 }
 
 .skills-logos {
@@ -325,7 +330,7 @@ a:hover {
 /* TRABAJOS */
 #trabajos {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--color-secondary);
     display: flex;
     justify-content: center;
@@ -340,7 +345,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5%;
+    padding: 5% 0;
     margin: auto;
 }
 
@@ -375,7 +380,7 @@ a:hover {
 /* CONTACTO */
 #contacto {
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
@@ -505,9 +510,92 @@ a:hover {
 
 /* fin redes contacto */
 
-/* RESPONSIVE */
+/* --------------RESPONSIVE---------------- */
 
+/* TABLET HORIZONTAL */
+@media (max-width: 1024px) {
+    
+    /* NAVBAR */
+    .menu-desktop ul li a:visited {
+        border-bottom: 0.3rem solid var(--color-primary);
+        background-color: var(--color-primary);
+    }
 
+    /* INICIO */
+    .container-inicio {
+        width: 100%;
+    }
+
+        .container-inicio h1 {
+            font-size: 2.9rem;
+        }
+
+    .card-inicio-redes a:visited {
+        background-color: var(--color-primary);
+    }
+
+    /* SOBRE MI */
+    .container-sobremi {
+        width: 100%;
+    }
+
+        .container-sobremi p {
+            font-size: 1.3rem;
+        }
+
+    /* SKILLS */
+    .container-skills {
+        width: 100%;
+    }
+
+    .skill-logo img {
+        filter: none;
+        width: 70%;
+    }
+
+    /* arreglo skin mysql */
+    .mysql img {
+        margin-top: 3rem;
+    }
+
+    /* TRABAJOS */
+    .container-trabajos {
+        width: 100%;
+    }
+
+    /* CONTACTO */
+    .container-contacto {
+        width: 100%;
+    }
+
+    .contacto-form {
+        width: 45%;
+    }
+
+    .container-form-info {
+        justify-content: space-evenly;
+    }
+
+    .contacto-info-redes a:visited {
+        background-color: var(--color-primary);
+    }
+
+}
+
+/* TABLET VERTICAL */
+@media (max-width: 768px) {
+
+}
+
+/* MOBILE HORIZONTAL */
+@media (max-width: 480px) {
+
+}
+
+/* MOBILE VERTICAL */
+@media (max-width: 320px) {
+
+}
 
 /* arreglo de contenido al achicar en el eje Y */
 @media (max-height: 620px) {
@@ -515,6 +603,10 @@ a:hover {
     #inicio, #sobre-mi, #skills, #trabajos, #contacto  {
         height: auto;
         padding: 10% auto;
+    }
+
+    .container-inicio {
+        margin: 5rem auto;
     }
 
 }
