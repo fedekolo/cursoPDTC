@@ -117,7 +117,7 @@ a:hover {
 }
 
 .container-inicio {
-    width: 90%;
+    width: 80%;
     max-width: 90rem;
     height: auto;
     display: flex;
@@ -243,13 +243,14 @@ a:hover {
 
 .container-skills {
     width: 80%;
-    max-width: 70rem;
+    max-width: 90rem;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 5%;
+    margin: auto;
 }
 
 .skills-logos {
@@ -288,13 +289,13 @@ a:hover {
         appearance: none;
         -webkit-appearance: none;
         -moz-appearance: none;
-        border: .2rem solid rgba(0, 0, 0, 0.295);
+        border: .2rem solid rgba(0, 0, 0, 0.178);
         border-radius: .5rem;
         margin: auto;
     }
 
     .skill-logo progress[value]::-webkit-progress-bar {
-        background-color: #3b445c75;
+        background-color: #252b3a75;
     }
 
     .skill-logo progress[value]::-webkit-progress-value {
@@ -340,6 +341,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding-top: 5%;
+    margin: auto;
 }
 
 .items-trabajos {
@@ -353,7 +355,7 @@ a:hover {
 .item-trabajo {
     width: 40%;
     height: auto;
-    margin: 5%;
+    margin: 3%;
     text-align: center;
 }
 
@@ -389,6 +391,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     padding: 5% auto;
+    margin: auto;
 }
 
 .container-form-info {
@@ -398,7 +401,7 @@ a:hover {
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 3%;
     padding: 0 0 2% 0;
 }
 
@@ -410,12 +413,12 @@ a:hover {
     background-color: var(--color-secondary);
     padding: 3rem;
     border-radius: .5rem;
-    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.644);
+    box-shadow: .5rem .5rem .5rem rgba(0, 0, 0, 0.39);
 }
 
     .contacto-form input, textarea {
         height: 2rem;
-        margin: 1rem 0;
+        margin: 1.5rem 0;
         background-color: var(--color-secondary);
         border: 0;
         border-bottom: .1rem solid #ffb950d0;
@@ -449,7 +452,19 @@ a:hover {
         margin: 1rem auto;
         background-color: var(--color-terciary);
         border-radius: .5rem;
+        border: none;
+        box-shadow: .2rem .2rem .3rem rgba(0, 0, 0, 0.158);
+        letter-spacing: .2rem;
+        font-weight: bold;
+        transition: all .5s ease;
+        font-family: 'Nunito', sans-serif;
     }
+
+        .contacto-form button:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+            background-color: #ffc423c0;
+        }
 
 .contacto-info {
     text-align: center;
@@ -490,8 +505,7 @@ a:hover {
 
 /* fin redes contacto */
 
-
-
+/* RESPONSIVE */
 
 
 
@@ -500,6 +514,8 @@ a:hover {
 
     #inicio, #sobre-mi, #skills, #trabajos, #contacto  {
         height: auto;
+        padding: 10% auto;
     }
 
 }
+
