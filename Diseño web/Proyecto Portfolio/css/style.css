@@ -113,11 +113,10 @@ a:hover {
 /* INICIO */
 #inicio {
     width: 100vw;
-    height: 110vh;
+    height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .container-inicio {
@@ -126,7 +125,6 @@ a:hover {
     height: auto;
     display: flex;
     flex-flow: row nowrap;
-    align-items: center;
     justify-content: center;
 }
 
@@ -187,6 +185,11 @@ a:hover {
     align-items: flex-end;
 }
 
+    .foto-inicio img {
+        width: 100%;
+        height: auto;
+    }
+
 /* SOBRE MI */
 #sobre-mi {
     width: 100vw;
@@ -215,6 +218,12 @@ a:hover {
     justify-content: center;
     align-items: flex-start;
 }
+
+    .foto-perfil-sobremi img {
+        width: 100%;
+        height: auto;
+        border-bottom: .4rem solid var(--color-terciary);
+    }
 
 .card-sobremi {
     width: 50%;
