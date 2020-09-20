@@ -110,6 +110,11 @@ a:hover {
         background-color: rgba(0, 0, 0, 0.253);
     }
 
+/* menu mobile */
+.menu-mobile {
+    display: none;
+}
+
 /* INICIO */
 #inicio {
     width: 100vw;
@@ -438,6 +443,7 @@ a:hover {
         border-bottom: .1rem solid #ffb950d0;
         color: white;
         outline: none;
+        font-family: 'Nunito', sans-serif;
     }
 
     .contacto-form textarea {
@@ -533,12 +539,17 @@ a:hover {
     /* INICIO */
     .container-inicio {
         width: 100%;
+        padding-right: 3%;
     }
 
         .container-inicio h1 {
             font-size: 2.9rem;
         }
 
+    .card-inicio {
+        margin-right: 2rem;
+    }
+    
     .card-inicio-redes a:visited {
         background-color: var(--color-primary);
     }
@@ -546,12 +557,13 @@ a:hover {
     /* SOBRE MI */
     .container-sobremi {
         width: 100%;
+        padding-left: 3%;
     }
 
         .container-sobremi p {
             font-size: 1.3rem;
         }
-
+    
     /* SKILLS */
     .container-skills {
         width: 100%;
@@ -593,21 +605,151 @@ a:hover {
 
 /* TABLET VERTICAL */
 @media (max-width: 768px) {
+    
+    /* INICIO */
+    .card-inicio {
+        text-align: center;
+        width: 80%;
+    }
+
+    .card-inicio-boton, .card-inicio-redes {
+        margin: .5rem auto;
+    }
+    
+    .foto-inicio {
+        display: none;
+    }
+
+    /* SOBRE MI */
+    .container-sobremi {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .foto-perfil-sobremi {
+        margin-bottom: 2rem;
+    }
+
+    .card-sobremi {
+        width: 80%;
+    }
+
+        .card-sobremi h2 {
+            text-align: center;
+        }
+
+        .card-sobremi img {
+            display: none;
+        }
+
+    /* SKILLS */
+    .skills-logos {
+        width: 100%;
+    }
+
+    .skill-logo {
+        margin: 2% 3%;
+        width: 25%;
+    }
+
+    /* arreglo progress mysql */
+    .skill-logo.mysql img {
+        margin-bottom: 4.3rem;
+    }
+
+    /* TRABAJOS */
+    .items-trabajos {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .item-trabajo {
+        width: 60%;
+        margin: .6rem auto;
+    }
+
+        .item-trabajo img {
+            width: 18rem;
+        }
+
+    /* CONTACTO */
+    .container-form-info {
+        flex-direction: column;
+    }
+
+    .contacto-form {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .contacto-info {
+        line-height: 1.8;
+        margin-top: 2rem;
+    }
 
 }
 
 /* MOBILE HORIZONTAL */
-@media (max-width: 480px) {
+@media (max-height: 420px) and (max-width: 820px) {
+
+    /* NAVBAR */
+    .menu-desktop {
+        display: none;
+    }
+
+    .input-menu {
+        display: none;
+    }
+    
+    .label-menu img.open {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 1rem auto auto 1.5rem;
+    }
+
+    .label-menu img.close {
+        display: none;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .input-menu:checked ~ .menu-mobile ul {
+        width: 100%;
+    }
+
+    .input-menu:checked ~ .menu-mobile img.open {
+        display: none;
+    }
+
+    .input-menu:checked ~ .menu-mobile img.close {
+        display: block;
+    }
+
+    .menu-mobile {
+        display: block;
+        height: 100%;
+        width: 0;
+    }
+
+        .menu-mobile ul {
+            width: 0;
+            height: 100%;
+            background-color: var(--color-primary);
+            display: flex;
+            flex-direction: column;
+            list-style: none;  
+        }
+
 
 }
 
 /* MOBILE VERTICAL */
-@media (max-width: 320px) {
+@media (max-width: 420px) {
 
 }
 
 /* arreglo de contenido al achicar en el eje Y */
-@media (max-height: 620px) {
+@media (max-width: 1024px) and (max-height: 620px) {
 
     #inicio, #sobre-mi, #skills, #trabajos, #contacto  {
         height: auto;
