@@ -111,7 +111,7 @@ a:hover {
     }
 
 /* menu mobile */
-.menu-mobile {
+.container-menu-mobile {
     display: none;
 }
 
@@ -536,6 +536,11 @@ a:hover {
         background-color: var(--color-primary);
     }
 
+    /* menu mobile */
+    .container-menu-mobile {
+        display: none;
+    }
+
     /* INICIO */
     .container-inicio {
         width: 100%;
@@ -605,6 +610,12 @@ a:hover {
 
 /* TABLET VERTICAL */
 @media (max-width: 768px) {
+    
+    /* NAVBAR */
+    /* menu mobile */
+    .container-menu-mobile {
+        display: none;
+    }
     
     /* INICIO */
     .card-inicio {
@@ -689,67 +700,190 @@ a:hover {
 
 }
 
+/* MENU MOBILE */
+.input-menu {
+    display: none;
+}
+
+.label-menu {
+    width: auto;
+    height: auto;
+    position: fixed;
+    top: 1rem;
+    left: 1.5rem;
+    z-index: 100;
+}
+
+    .label-menu img.open {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .label-menu img.close {
+        display: none;
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+.menu-mobile {
+    display: block;
+    height: 100%;
+    width: 0;
+    background-color: var(--color-primary);
+    box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.329);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 1s ease;
+}
+
+    .menu-mobile ul {
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        list-style: none;  
+        flex-wrap: nowrap;
+        margin: 4.5rem auto auto 1.2rem;
+        line-height: 2.2;
+        font-size: 1.3rem;
+    }
+
+    .menu-mobile ul li a {
+        color: white;
+        border-left: .3rem solid var(--color-terciary);
+        border-right: .3rem solid var(--color-terciary);;
+        padding: 0 .4rem;
+    }
+    
+.input-menu:checked ~ .menu-mobile {
+    width: 25%;
+}
+
+.input-menu:checked ~ .label-menu img.open {
+    display: none;
+}
+
+.input-menu:checked ~ .label-menu img.close {
+    display: block;
+}
+
 /* MOBILE HORIZONTAL */
 @media (max-height: 420px) and (max-width: 820px) {
+
+    /* FUENTES */
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 
     /* NAVBAR */
     .menu-desktop {
         display: none;
     }
 
-    .input-menu {
-        display: none;
+    .container-menu-mobile {
+        display: block;
     }
     
-    .label-menu img.open {
-        width: 2.5rem;
-        height: 2.5rem;
-        margin: 1rem auto auto 1.5rem;
+    /* INICIO */
+    .container-inicio {
+        padding: 0;
+    }
+    
+    .card-inicio {
+        text-align: center;
+        width: 80%;
+        margin: auto;
     }
 
-    .label-menu img.close {
+    .card-inicio-boton, .card-inicio-redes {
+        margin: .5rem auto;
+    }
+    
+    .foto-inicio {
         display: none;
-        width: 2.5rem;
-        height: 2.5rem;
     }
 
-    .input-menu:checked ~ .menu-mobile ul {
-        width: 100%;
+    /* SOBRE MI */
+    .card-sobremi p {
+        font-size: 1rem;
     }
 
-    .input-menu:checked ~ .menu-mobile img.open {
-        display: none;
+    /* SKILLS */
+    #skills {
+        height: auto;
+    }
+    
+    .skills-logos {
+        width: 95%;
     }
 
-    .input-menu:checked ~ .menu-mobile img.close {
-        display: block;
+    .skill-logo {
+        margin: 1% 0;
+        width: 25%;
+        margin-bottom: .5rem;
     }
 
-    .menu-mobile {
-        display: block;
-        height: 100%;
-        width: 0;
-    }
-
-        .menu-mobile ul {
-            width: 0;
-            height: 100%;
-            background-color: var(--color-primary);
-            display: flex;
-            flex-direction: column;
-            list-style: none;  
+        .skill-logo img {
+            width: 60%;
         }
 
+    /* arreglo progress mysql */
+    .skill-logo.mysql img {
+        margin-bottom: 3.7rem;
+    }
+
+    /* TRABAJOS */
+    .item-trabajo {
+        width: 40%;
+    }
+
+        .item-trabajo img {
+            width: 13rem;
+            margin: .2rem auto;
+        }
+
+    /* CONTACTO */
+    #contacto {
+        height: auto;
+    }
+
+    .container-contacto h2 {
+        margin-top: 1.5rem;
+    }
+    
+    .container-form-info {
+        flex-direction: column;
+    }
+
+    .contacto-form {
+        width: 80%;
+        padding: 2rem;
+    }
+
+    .contacto-info {
+        line-height: 1.8;
+        margin-top: 2rem;
+    }
 
 }
 
 /* MOBILE VERTICAL */
 @media (max-width: 420px) {
-
+    
 }
 
 /* arreglo de contenido al achicar en el eje Y */
-@media (max-width: 1024px) and (max-height: 620px) {
+@media (min-width: 821px) and (max-width: 2000px) and (max-height: 620px) {
 
     #inicio, #sobre-mi, #skills, #trabajos, #contacto  {
         height: auto;
