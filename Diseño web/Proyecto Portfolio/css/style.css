@@ -870,6 +870,10 @@ a:hover {
             height: 8%;
         }
 
+        .skill-logo h4 {
+            overflow-y: hidden;
+        }
+
     /* arreglo progress mysql */
     .skill-logo.mysql img {
         margin-bottom: 3.7rem;
@@ -986,7 +990,7 @@ a:hover {
     .card-inicio {
         transform: translateX(0);
         -webkit-transform: translateX(0);
-        animation: card-left 2s ease;
+        animation: card-left 1.5s ease;
     }
 
     @keyframes card-left {
@@ -997,7 +1001,7 @@ a:hover {
     .foto-inicio {
         transform: translateX(0);
         -webkit-transform: translateX(0);
-        animation: foto-left 2s ease;
+        animation: foto-left 1.5s ease;
     }
 
     @keyframes foto-left {
