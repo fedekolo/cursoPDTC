@@ -6,7 +6,7 @@
 /* COLORES BASE */
 :root {
     --color-primary: #161922;
-    --color-secondary: #191d27;
+    --color-secondary: #1b202b;
     --color-terciary: #ffb950d0;
 }
 
@@ -314,7 +314,7 @@ a:hover {
     }
 
     .skill-logo progress[value]::-webkit-progress-bar {
-        background-color: #252b3a75;
+        background-color: var(--color-secondary);
     }
 
     .skill-logo progress[value]::-webkit-progress-value {
@@ -440,7 +440,7 @@ a:hover {
         margin: 1.5rem 0;
         background-color: var(--color-secondary);
         border: 0;
-        border-bottom: .1rem solid #ffb950d0;
+        border-bottom: .1rem solid var(--color-terciary);
         color: white;
         outline: none;
         font-family: 'Nunito', sans-serif;
