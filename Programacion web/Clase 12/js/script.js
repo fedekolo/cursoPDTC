@@ -68,4 +68,12 @@
 //     numeroC = numeroC+2;
 // }
 
-let numeroD 
+let numeroD = 0;
+
+while (numeroD <=150) {
+    numeroD = numeroD + 1;
+    while ((numeroD%(numeroD-1))=0) {
+        
+    }
+    
+}
