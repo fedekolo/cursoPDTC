@@ -68,12 +68,103 @@
 //     numeroC = numeroC+2;
 // }
 
-let numeroD = 0;
+// let numeroPrimo = 1;
+// let numeroVariable;
 
-while (numeroD <=150) {
-    numeroD = numeroD + 1;
-    while ((numeroD%(numeroD-1))=0) {
-        
-    }
+// while (numeroPrimo <= 150) {
     
-}
+//     numeroVariable = 1;
+
+//     while (numeroVariable <= numeroPrimo) {
+//         while (condition) {
+            
+//         }
+//         if () {
+            
+//         } else {
+//             console.log(numeroPrimo);
+//         }
+
+//         numeroVariable++;
+//     }
+
+//     numeroPrimo++;
+// }
+
+// EJERCICIO 3
+
+// let edad;
+// let sexo;
+
+// edad = prompt("Cual es su edad?");
+
+// while (1 > edad || edad > 110 || !edad) {
+//     alert("Por favor, ingresar una edad entre 1 y 110 años.");
+//     edad = prompt("Cual es su edad?");
+// }
+
+// sexo = prompt("Ingrese su sexo (M/F)").toLocaleUpperCase();
+
+// while (sexo!=="M" && sexo!=="F") {
+//     alert("Por favor, ingresar su sexo correctamente.");
+//     sexo = prompt("Ingrese su sexo (M/F)").toLocaleUpperCase();
+// }
+
+// if (sexo==="M" && edad >= 65) {
+//     alert("Usted se puede jubilar.");
+// } else {
+//     alert("Usted no se puede jubilar.");
+// }
+
+// if (sexo==="F" && edad >= 60) {
+//     alert("Usted se puede jubilar.");
+// } else {
+//     alert("Usted no se puede jubilar.");
+// }
+
+// EJERCICIO 4
+
+// let contraseñaGuardada = "123";
+// let intentos;
+// let contraseñaUsuario = prompt("Ingrese una contraseña");
+
+// if (contraseñaUsuario === contraseñaGuardada) {
+//     alert("Bienvenido!");
+// } else {
+//     alert("Contraseña incorrecta, vuelve a intentarlo.");
+//     intentos = 1;
+
+//     while (contraseñaUsuario !== contraseñaGuardada && intentos < 3) {
+        
+//         contraseñaUsuario = prompt("Ingrese una contraseña");
+        
+//         if (contraseñaUsuario === contraseñaGuardada) {
+//             alert("Bienvenido!");
+//         } else {
+//             alert("Contraseña incorrecta, vuelve a intentarlo.");
+//             intentos++;
+//         }
+        
+//     }
+// }
+
+// if (intentos===3) {
+//     alert("Lo siento, ya has intentando demasiadas veces.")
+// }
+
+// EJERCICIO 6
+
+// let numero = prompt("Ingrese un numero entre 1 y 10");
+// let multiplicador = 1;
+// let resultado;
+
+// while (1 > numero || numero > 10 || !numero) {
+//     alert("Ingrese un número del 1 al 10 por favor");
+//     numero = prompt("Ingrese un numero");
+// }
+
+// while (multiplicador <= 10 && 1 <= numero && numero <= 10) {
+//     resultado = parseInt(numero)*multiplicador;
+//     document.write(`<p>${numero} x ${multiplicador} = ${resultado}</p>`);
+//     multiplicador++;
+// }
