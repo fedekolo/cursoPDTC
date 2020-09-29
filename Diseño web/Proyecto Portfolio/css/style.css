@@ -563,6 +563,7 @@ a:hover {
     left: 0;
     z-index: 90;
     transition: all 1s ease;
+    white-space: nowrap;
 }
 
     .menu-mobile ul {
