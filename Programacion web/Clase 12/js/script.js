@@ -68,27 +68,27 @@
 //     numeroC = numeroC+2;
 // }
 
-// let numeroPrimo = 1;
-// let numeroVariable;
+// let divisor;
+// let primo = 1;
+// let restos = 0;
 
-// while (numeroPrimo <= 150) {
-    
-//     numeroVariable = 1;
+// while (primo <= 150) {
+//     divisor = 2;
 
-//     while (numeroVariable <= numeroPrimo) {
-//         while (condition) {
-            
+//     while (divisor < primo) {
+
+//         if (primo%divisor===0) {
+//             restos++;
 //         }
-//         if () {
-            
-//         } else {
-//             console.log(numeroPrimo);
-//         }
-
-//         numeroVariable++;
+//         divisor++;
 //     }
 
-//     numeroPrimo++;
+//     if (restos===0) {
+//         console.log(primo)
+//     }
+
+//     restos=0;
+//     primo++;
 // }
 
 // EJERCICIO 3
@@ -168,3 +168,4 @@
 //     document.write(`<p>${numero} x ${multiplicador} = ${resultado}</p>`);
 //     multiplicador++;
 // }
+
