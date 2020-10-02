@@ -9,9 +9,13 @@
 //     console.log(ensaladaDeFrutas[i]);
 // }
 
-// EJERCICIO 2 (SIN TERMINAR)
+// EJERCICIO 2 
 
 // let toDoList = ["limpiar","cocinar","ordenar","trabajar","hacer ejercicio"];
+
+// i = toDoList.indexOf(prompt("Escribre una tarea"));
+// let remove = toDoList.splice(i,1);
+
 
 // EJERCICIO 3
 
