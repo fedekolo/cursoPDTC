@@ -42,3 +42,36 @@
 // }
 
 // facturacion(parseInt(prompt("Ingrese el monto a abonar")), prompt("Ingrese el medio de pago").toUpperCase());
+
+// EJERCICIO 4
+
+// function iterarArray(array) {
+   
+//     // for (let i = 0; i < array.length; i++) {
+//     //     console.log(array[i]);
+//     // }
+
+//     array.forEach(element => {
+//         console.log(element);
+//     });
+
+// }
+
+// iterarArray(["Fede","Lu","Gal"]);
+
+// EJERCICIO 5
+
+// function tirarDados(min,max) {
+//     min=1;
+//     max=7;
+//     let random = Math.floor(Math.random() * (max - min)) + min;
+//     alert("Tu número es "+random);
+// }
+
+// EJERCICIO 6
+
+// let clicks = 0;
+// function contadorDeClick() {
+//     clicks++;
+//     console.log(clicks);
+// }
