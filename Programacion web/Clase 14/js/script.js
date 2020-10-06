@@ -70,8 +70,8 @@
 
 // EJERCICIO 6
 
-// let clicks = 0;
-// function contadorDeClick() {
-//     clicks++;
-//     console.log(clicks);
-// }
+let clicks = 0;
+function contadorDeClick() {
+    clicks++;
+    console.log(clicks);
+}
