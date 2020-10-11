@@ -1,0 +1,17 @@
+#contenedor {
+    display: flex;
+    flex-flow: row wrap;
+    width: 25vw;
+    height: 25vh;
+}
+
+.pixel {
+    flex: 1 1 auto;
+    background: navajowhite;
+    width: 5px;
+    height: 5px;
+}
+
+.pintura {
+    background: red;
+}
