@@ -29,3 +29,4 @@ pixeles.addEventListener("mouseenter", function(){
     nuevoDiv.classList.toggle("pintura");
 })
 
+

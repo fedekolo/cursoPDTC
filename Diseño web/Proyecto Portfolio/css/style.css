@@ -273,7 +273,7 @@ a:hover {
 }
 
 .skills-logos {
-    width: 80%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-flow: row wrap;
@@ -300,7 +300,7 @@ a:hover {
 
     .skill-logo img:hover {
         filter: none;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
     }
 
     /* BARRAS DE PROGRESO */
@@ -338,7 +338,7 @@ a:hover {
 
     /* arreglo skin mysql */
     .mysql img {
-        margin-top: 4rem;
+        margin-top: 3rem;
     }
 
 /* TRABAJOS */
@@ -412,6 +412,10 @@ a:hover {
     padding: 5% auto;
     margin: auto;
 }
+
+    .container-contacto h2 {
+        margin-top: 2rem;
+    }
 
 .container-form-info {
     width: 100%;
