@@ -23,10 +23,10 @@ window.addEventListener("load",
 
 // al pasar el mouse por encima se activa la propiedad "pintura"
 
-let pixeles = document.querySelectorAll("pixel");
+let pixeles = document.querySelectorAll(".pixel");
 
-pixeles.addEventListener("mouseenter", function(){
-    nuevoDiv.classList.toggle("pintura");
+pixeles.addEventListener("mouseover", function(){
+    pixeles.classList.toggle("pintura");
 })
 
 
