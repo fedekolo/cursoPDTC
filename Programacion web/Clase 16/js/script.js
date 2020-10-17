@@ -12,46 +12,46 @@
 // EJERCICIO 2
 
 // informacion super heroes
-const superHeroes = {
-    "squadName" : "Super Hero Squad",
-    "homeTown" : "Metro City",
-    "formed" : 2016,
-    "secretBase" : "Super tower",
-    "active" : true,
-    "members" : [
-        {
-        "name" : "Molecule Man",
-        "age" : 29,
-        "secretIdentity" : "Dan Jukes",
-        "powers" : [
-            "Radiation resistance",
-            "Turning tiny",
-            "Radiation blast"
-        ]
-        },
-        {
-        "name" : "Madame Uppercut",
-        "age" : 39,
-        "secretIdentity" : "Jane Wilson",
-        "powers" : [
-            "Million tonne punch",
-            "Damage resistance",
-            "Superhuman reflexes"
-        ]
-        }
-        ]
-    }
+// const superHeroes = {
+//     "squadName" : "Super Hero Squad",
+//     "homeTown" : "Metro City",
+//     "formed" : 2016,
+//     "secretBase" : "Super tower",
+//     "active" : true,
+//     "members" : [
+//         {
+//         "name" : "Molecule Man",
+//         "age" : 29,
+//         "secretIdentity" : "Dan Jukes",
+//         "powers" : [
+//             "Radiation resistance",
+//             "Turning tiny",
+//             "Radiation blast"
+//         ]
+//         },
+//         {
+//         "name" : "Madame Uppercut",
+//         "age" : 39,
+//         "secretIdentity" : "Jane Wilson",
+//         "powers" : [
+//             "Million tonne punch",
+//             "Damage resistance",
+//             "Superhuman reflexes"
+//         ]
+//         }
+//         ]
+//     }
 
-    // manipulacion de los datos
+//     // manipulacion de los datos
 
-    // funcion impresion datos
-    function imprimirDatos() {
+//     // funcion impresion datos
+//     function imprimirDatos() {
         
-    }
+//     }
     
-    // boton cargador de supeheroes
-    let btnSuperHeroes = document.querySelector("btn-warning");
-    btnSuperHeroes.addEventListener("click",imprimirDatos);
+//     // boton cargador de supeheroes
+//     let btnSuperHeroes = document.querySelector("btn-warning");
+//     btnSuperHeroes.addEventListener("click",imprimirDatos);
 
 
 
