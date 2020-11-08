@@ -44,7 +44,7 @@ class Mueble {
 // EJERCICIO 3
 
 class Mesa extends Mueble {
-    constructor () {
+    constructor (espacio) {
         super(espacio);
         this.espacio = espacio;
     }
@@ -63,6 +63,36 @@ class Mesa extends Mueble {
     }
 }
 
-let espacio = new Mesa("vidrio",0,25,"patio");
-console.log(espacio.espacialidad);
+// let espacio = new Mesa("pati");
+// console.log(espacio.espacialidad);
+
+// EJERCICIO 4
+
+class Silla extends Mueble {
+    constructor (respaldo,altura,patas) {
+        super(respaldo,altura);
+        this.respaldo = respaldo;
+        this.altura = altura;
+        this.patas = patas;
+    }
+
+    get taburete() {
+        return this.consultaTaburete();
+    }
+
+    consultaTaburete() {
+        if (this.respaldo==="No" && this.altura===100 && this.patas===1) {
+            return "Es un taburete"
+        } else {
+            return "No es un taburete";
+        }
+    }
+}
+
+// let taburete = new Silla("No",100,1);
+// console.log(taburete.taburete);
+
+// EJERCICIO 5
+
+// Ni ganas
 
